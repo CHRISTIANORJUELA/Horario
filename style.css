@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-cells: #fff;
+    --color-all: #1205a7;
+    --color-head: #dedee1;
+    --color-header: #291670;
+    --color-font-header:#fff;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    background-color: var(--color-header);
+    position: relative;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius:2px ;
+    color: var(--color-font-header);
+}
+
+.container-actions{
+    position: absolute;
+    left: 2%;
+    top:  40%;
+}
+
+.container-actions span{
+    margin-left: 20px;
+}
+
+.container-nameUser{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+.full-container{
+    padding: 30px 30px;
+}
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container-work{
+    border-radius: 10px;
+    padding: 10px 10px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.container-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px ;
+    font-weight: bold;
+}
+
+.control{
+    padding: 0 10px;
+}
+
+
+.grid-container-info-days,
+.grid-container-hours{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.grid-container-info-days{
+    font-weight: bold;
+}
+
+.grid-container-hours{
+grid-auto-rows: 50px;
+}
+
+.grid-cell{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-cell-gd{
+ background-color: var(--color-cells);
+ border: solid rgb(189, 187, 187) 1px;
+}
+
+.grid-cell-gh{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--color-head);
+}
+
+
